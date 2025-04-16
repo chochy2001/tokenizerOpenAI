@@ -1,7 +1,3 @@
-Here's the README.md in English and Spanish:
-
----
-
 # OpenAI Tokenizer in Go
 
 This project provides a simple utility to tokenize text using the OpenAI tokenizer in Go. It helps you determine the number of tokens in a given text, which is useful for adjusting the input to fit within the model's training threshold and text quantity limits.
