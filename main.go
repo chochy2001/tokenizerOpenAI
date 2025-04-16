@@ -2,17 +2,10 @@ package main
 
 import (
 	"fmt"
-
 	"github.com/pkoukk/tiktoken-go"
 )
 
 func main() {
-	text := `
-Texto de prueba para tokenizar.
-Este es un texto de prueba para tokenizar.
-Este es un texto de prueba para tokenizar.
-Este es un texto de prueba para tokenizar.
-`
 	encoding := "cl100k_base"
 
 	// if you don't want download dictionary at runtime, you can use offline loader
@@ -24,10 +17,7 @@ Este es un texto de prueba para tokenizar.
 	}
 
 	// encode
-	token := tke.Encode(text, nil, nil)
+	token := tke.Encode(textToTokenize(), nil, nil)
 
-	//tokens
-	// fmt.Println((token))
-	// num_tokens
 	fmt.Println("total length of tokens. ", len(token))
 }
